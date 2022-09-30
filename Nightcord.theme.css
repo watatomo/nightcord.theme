@@ -1,0 +1,295 @@
+/**
+* @name Nightcord
+* @author mfycode, Miya (heya puddpudd!!)
+* @version 1.0
+* @description A theme made to look like the Nightcord UI from Project Sekai (プロセカ)!
+* @website https://mfycode.github.io
+*/
+
+/*Credits to @KageMiyaku and @Pudding77984612 for the original theme. Thank you!*/
+
+/* STATUS COLORS */
+rect[fill^="hsl(139,"] {fill: #93FFEE} /*online status color*/
+rect[fill^="hsl(38,"] {fill: #FFDD59} /*idle status color*/
+rect[fill^="hsl(359,"] {fill: #FF55AA} /*dnd status color*/
+rect[fill^="hsl(262,"] {fill: #9491E1} /*streaming  status color*/
+rect[fill^="hsl(214,"] {fill: #DBE8F3} /*offline/invisible status color*/
+
+.description-3Cwkxk {
+    display:none;
+}
+
+/* TOP BAR */
+.titleBar-1it3bQ {
+    background:#3F365B;
+}
+
+/* LOGO */
+.wordmarkWindows-2dq6rw svg {
+display:none;
+}
+.wordmarkWindows-2dq6rw::after {
+
+top:-2px;
+left: 1px;
+position: relative;
+    content: url();
+}
+
+/* HOME ICON */
+.homeIcon-r0w4ny path { fill: transparent }
+.homeIcon-r0w4ny {
+background: url(https://mfycode.github.io/home-icon.svg) center/cover no-repeat;
+min-width: 48px;
+min-height: 48px;
+}
+
+/* SCROLL BAR COLORS */
+.chat-2ZfjoI .scroller-kQBbkU::-webkit-scrollbar-track {
+    background-color: #443C59 ;
+}
+
+.chat-2ZfjoI .scroller-kQBbkU::-webkit-scrollbar-thumb {
+    background-color: #322C4B ;
+}
+
+/* SERVER BAR COLORS*/
+.tree-3agP2X {
+    content: "";
+    background: #3E365A;
+}
+.numberBadge-37OJ3S > .base-3IDx3L > .baseShapeRound-3epLEv {
+    color: #B8B8B9;
+}
+.circleIconButton-1VxDrg{
+    color: #B8B8B9;    
+}
+.audioControls-3fmemK{
+    background: #3E365A;
+}
+
+/* OPEN CHANNEL COLOR */
+.selected-2TbFuo .content-1gYQeQ{
+    background: #4F4869;
+}
+
+/* OPEN DM COLOR */
+.interactive-1vLZ_I.interactive-iyXY_x.interactiveSelected-29CP8y.selected-3veCBZ{
+    background: #4F4869;
+}
+
+/* CHATBOX */
+  :root {
+      --color-brand-lighter: #4981e2;
+    }
+    .input-2g-os5,
+    .scrollableContainer-15eg7h {
+	
+      background-color: #3E365A;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+      border: 1px solid;
+      border-color: #686082;
+    }
+    .input-2g-os5:hover,
+    .scrollableContainer-15eg7h:hover {
+      border-color: #686082;
+      background-color: #3E365A;
+    }
+    .input-2g-os5:focus-within,
+    .scrollableContainer-15eg7h:focus-within {
+      background-color: #3E365A;
+      border-color: #686082;
+    }
+
+[class^="buttons-"] > button[class*="lookBlank-"][class*="grow-"] > div:not([class*="translateButton-"]), /* send a nitro button */
+[class^="buttons-"] > div[class^="buttonContainer"] > button:not([class^="emojiButton"])[class*="lookBlank-"][class*="grow-"] /* send a gif button */
+{
+    display: none;
+}
+/* CHATBOX MESSAGE COLOR */
+  .placeholder-1rCBhr.slateTextArea-27tjG0.fontSize16Padding-XoMpjI{
+    color: #B0AAC9;
+}
+
+/* ATTACHMENT ICONS */
+.downloadButton-2HLFWN {
+    top:-2px;
+    color:transparent !important;
+    background:url("https://mfycode.github.io/dl-icon.svg") center/cover no-repeat;
+}
+
+.icon-1KCy88 {
+top:-2px;
+left: 1px;
+position: relative;
+    content: url(https://mfycode.github.io/file-icon.svg);
+      background: transparent
+}
+
+.attachment-1PZZB2 {
+    background: #68617E;
+}
+
+.metadata-1E7Z4i {
+    color: #A2A0B5;
+}
+
+.metadataIcon-3QMhu9 {
+    top:-2px;
+    color:transparent !important;
+    background:url("https://mfycode.github.io/dl-icon.svg") center/cover no-repeat;
+}
+
+.icon-1KCy88 {
+top:-2px;
+left: 1px;
+position: relative;
+    content: url(https://mfycode.github.io/file-icon.svg);
+      background: transparent
+}
+
+.wrapperAudio-1Bzv_Z.wrapper-1FP9YQ.embedWrapper-1MtIDg{
+    background: #68617E;
+}
+
+.audioMetadata-1Hrt8T:before{
+    content:"";
+    width:30px;
+    height:38px;
+    background:url(https://mfycode.github.io/audio-icon.svg) center/cover no-repeat}
+
+.downloadButton-2HLFWN {
+    top:-2px;
+    color:transparent !important;
+    background:url("https://mfycode.github.io/dl-icon.svg") center/cover no-repeat;
+}
+
+/* BUTTON ANIMATION */
+.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
+    opacity: 0% !important;
+    width: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
+    opacity: 100% !important;
+    width: 32px;
+}
+
+/* CONTROL BUTTONS */
+.theme-dark {
+    --background-primary: #4F4869;
+    --background-secondary: #3e365a;
+    --background-secondary-alt: #3E365A;
+    --background-tertiary: #3E365A;
+    --background-accent: #3E365A;
+    --background-floating: #3E365A;
+}
+
+.winButton-3UMjdg:nth-child(2) {
+    color: #FF55AA;
+    border-radius: 2000px;
+    background-color: #FF55AA;
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.winButtonMinMax-3RsPUg:nth-child(4):hover {
+    color: #5487FF;
+    border-radius: 2000px;
+    background-color: #5487FF;
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    margin-right: -2px;
+    margin-left: 8px;
+}
+.winButtonMinMax-3RsPUg:nth-child(3):hover {
+    color:rgb(255, 184, 53);
+    border-radius: 200px;
+    background-color:rgb(255, 184, 53);
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    margin-right: -2px;
+    margin-left: 8px;
+}
+.winButton-3UMjdg:nth-child(2):hover {
+    color: #FF55AA;
+    border-radius: 50%;
+    background-color:rgb(255, 70, 70);
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.winButtonMinMax-3RsPUg:nth-child(4) {
+    color:#43DDFF;
+    border-radius: 200px;
+    background-color:#43DDFF;
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    margin-right: -2px;
+    margin-left: 8px;
+}
+.winButtonMinMax-3RsPUg:nth-child(3) {
+    color:#FFDD59;
+    border-radius: 200px;
+    background-color:#FFDD59;
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    margin-right: -2px;
+    margin-left: 8px;
+}
+.winButton-3UMjdg {
+    color: #ff5b5b;
+    transition: all 200ms ease-out;
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    margin-right: -2px;
+    margin-left: 8px;
+}
+.winButton-3UMjdg:hover {
+    background: transparent;
+    transform: rotate(45deg);
+    border-radius: 30px;
+    transition: all 200ms ease-out;
+}
+  
+/* HIDE 'GIFT' BUTTON */
+.button-f2h6uQ[aria-label="Send a gift"i] {display: none;}
+
+/* SETTINGS SIDEBAR */
+.sidebar-nqHbhN { fill: transparent }
+.sidebarRegionScroller-FXiQOh { 
+min-width: 48px;
+min-height: 48px;
+}
+
+  :root {
+      --color-brand-lighter: #4981e2;
+    }
+    .input-2g-os5,
+    .inner-1NoIT5 {
+	
+      background-color: #3E365A;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+      border: 1px solid;
+      border-color: #686082;
+    }
+    .input-2g-os5:hover,
+    .inner-1NoIT5:hover {
+      border-color: #686082;
+      background-color: #3E365A;
+    }
+    .input-2g-os5:focus-within,
+    .inner-1NoIT5:focus-within {
+      background-color: #3E365A;
+      border-color: #686082;
+    }
