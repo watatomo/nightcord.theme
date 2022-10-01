@@ -1,0 +1,81 @@
+// i hate the use of colors here but what can you do
+// div[class^="appMount-"]#app-mount,
+// body,
+// div[class^="app-"] > div[class^="app-"] > div[class^="bg-"] {
+//     background-color: var(--background-secondary);
+// }
+
+// titlebar
+div[class*="titleBar-"] {
+    // background-color: var(--background-secondary);
+
+    // windows exclusive
+    &[class*="typeWindows-"] {
+        &[class*="withFrame-"] {
+            height: 28px;
+            margin: 0;
+        }
+
+        div[class*="winButton-"] {
+            margin: 11px 0 0 9px;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            transition: background-color 0.2s ease;
+
+            svg * {
+                fill: transparent;
+                stroke: transparent;
+            }
+        }
+
+        div[class^="winButtonClose-"] {
+            background-color: $pink;
+            margin-right: 8px;
+
+            &:hover {
+                background-color: color.scale($pink, $lightness: -15%);
+            }
+        }
+
+        div[class^="winButtonMinMax-"] {
+            &:nth-child(3) {
+                background-color: $yellow;
+
+                &:hover {
+                    background-color: color.scale($yellow, $lightness: -40%);
+                }
+            }
+
+            &:nth-child(4) {
+                background-color: $sky;
+
+                &:hover {
+                    background-color: color.scale($sky, $lightness: -40%);
+                }
+            }
+        }
+
+        // goodbye discord logo
+        div[class^="wordmarkWindows-"] {
+            svg {
+                display: none;
+            }
+        }
+
+        &::before {
+            content: "Nightcord ";
+            font-weight: 800;
+            font-size: 0.85em;
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            color: $subtext0;
+            width: auto;
+        }
+    }
+}
+
+// [tabindex="0"] + div[class*="titleBar-"] {
+//     background-color: revert
+// }
