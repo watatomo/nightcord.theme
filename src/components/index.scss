@@ -1,18 +1,21 @@
-@import "variables";
+@use "_colors/dark";
 
-@import "titlebar";
-@import "icons";
+@use "variables";
 
-@import "buttons";
+@use "titlebar";
+@use "icons";
 
-@import "pages";
+@use "buttons";
 
-@import "navbar";
-@import "sidebar-channel";
+@use "pages";
 
-@import "chat";
+@use "navbar";
+@use "sidebar-channel";
 
-@import "popouts";
+@use "chat";
 
-@import "hljs";
-@import "details";
+@use "popouts";
+
+@use "hljs";
+
+@use "details";

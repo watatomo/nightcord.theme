@@ -1,9 +1,9 @@
-// @import "menu";
-@import "comm-updates";
-@import "inbox";
-@import "profile";
-@import "reactions";
-@import "create-server";
+// @use "menu";
+@use "comm-updates";
+@use "inbox";
+@use "profile";
+@use "reactions";
+@use "create-server";
 
 div[class^="layerContainer"] {
     // right-click popups for guild, channels, and user

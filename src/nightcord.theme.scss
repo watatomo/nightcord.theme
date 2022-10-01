@@ -8,9 +8,4 @@
 
 /*Credits to @KageMiyaku and @Pudding77984612 for the original theme. Thank you!*/
 
-@use "sass:math";
-@use "sass:color";
-
-@import "components/_colors/dark.scss";
-
-@import "components";
+@use "components";

@@ -1,0 +1,56 @@
+@use "sass:math";
+
+// make brand n25's image color
+$brand: #884499;
+
+// brand colors
+[data-popout-root],
+html {
+    // weighted brand colors
+    --brand-experiment: #{$brand};
+    --brand-experiment-100: #{lighten($brand, math.div(90%, 2))};
+    --brand-experiment-130: #{lighten($brand, math.div(85%, 2))};
+    --brand-experiment-160: #{lighten($brand, math.div(80%, 2))};
+    --brand-experiment-200: #{lighten($brand, math.div(75%, 2))};
+    --brand-experiment-230: #{lighten($brand, math.div(70%, 2))};
+    --brand-experiment-260: #{lighten($brand, math.div(65%, 2))};
+    --brand-experiment-300: #{lighten($brand, math.div(60%, 2))};
+    --brand-experiment-330: #{lighten($brand, math.div(50%, 2))};
+    --brand-experiment-360: #{lighten($brand, math.div(40%, 2))};
+    --brand-experiment-400: #{lighten($brand, math.div(30%, 2))};
+    --brand-experiment-430: #{lighten($brand, math.div(20%, 2))};
+    --brand-experiment-460: #{lighten($brand, math.div(10%, 2))};
+    --brand-experiment-500: #{$brand};
+    --brand-experiment-530: #{darken($brand, math.div(10%, 2))};
+    --brand-experiment-560: #{darken($brand, math.div(20%, 2))};
+    --brand-experiment-600: #{darken($brand, math.div(30%, 2))};
+    --brand-experiment-630: #{darken($brand, math.div(40%, 2))};
+    --brand-experiment-660: #{darken($brand, math.div(50%, 2))};
+    --brand-experiment-700: #{darken($brand, math.div(60%, 2))};
+    --brand-experiment-730: #{darken($brand, math.div(65%, 2))};
+    --brand-experiment-760: #{darken($brand, math.div(70%, 2))};
+    --brand-experiment-800: #{darken($brand, math.div(75%, 2))};
+    --brand-experiment-830: #{darken($brand, math.div(80%, 2))};
+    --brand-experiment-860: #{darken($brand, math.div(85%, 2))};
+    --brand-experiment-900: #{darken($brand, math.div(90%, 2))};
+    // similar to other brand colors, except alpha only
+    --brand-experiment-05a: #{adjust-color($brand, $alpha: -0.95)};
+    --brand-experiment-10a: #{adjust-color($brand, $alpha: -0.9)};
+    --brand-experiment-15a: #{adjust-color($brand, $alpha: -0.85)};
+    --brand-experiment-20a: #{adjust-color($brand, $alpha: -0.8)};
+    --brand-experiment-25a: #{adjust-color($brand, $alpha: -0.75)};
+    --brand-experiment-30a: #{adjust-color($brand, $alpha: -0.7)};
+    --brand-experiment-35a: #{adjust-color($brand, $alpha: -0.65)};
+    --brand-experiment-40a: #{adjust-color($brand, $alpha: -0.6)};
+    --brand-experiment-45a: #{adjust-color($brand, $alpha: -0.55)};
+    --brand-experiment-50a: #{adjust-color($brand, $alpha: -0.5)};
+    --brand-experiment-55a: #{adjust-color($brand, $alpha: -0.45)};
+    --brand-experiment-60a: #{adjust-color($brand, $alpha: -0.4)};
+    --brand-experiment-65a: #{adjust-color($brand, $alpha: -0.35)};
+    --brand-experiment-70a: #{adjust-color($brand, $alpha: -0.3)};
+    --brand-experiment-75a: #{adjust-color($brand, $alpha: -0.25)};
+    --brand-experiment-80a: #{adjust-color($brand, $alpha: -0.2)};
+    --brand-experiment-85a: #{adjust-color($brand, $alpha: -0.15)};
+    --brand-experiment-90a: #{adjust-color($brand, $alpha: -0.1)};
+    --brand-experiment-95a: #{adjust-color($brand, $alpha: -0.05)};
+}
