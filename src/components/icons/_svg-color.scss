@@ -1,58 +1,58 @@
 $svgColor: (
     "tier1ProfilePerk": (
-        color: $blue
+        color: $blue,
     ),
     "tier1BoostPerk": (
-        color: $pink
+        color: $pink,
     ),
     "tier1CustomEmojiPerk": (
-        color: $yellow
+        color: $yellow,
     ),
     "tier1UploadPerk": (
-        color: $lavender
+        color: $lavender,
     ),
     "tier1StreamPerk": (
-        color: $green
+        color: $green,
     ),
     "guildBoostingIcon": (
-        color: $pink
+        color: $pink,
     ),
     "guildSubscriptionSlotIcon": (
-        color: $pink
+        color: $pink,
     ),
     "guildSubscriberCountIcon": (
-        color: $pink
+        color: $pink,
     ),
     "gemWithLabel": (
-        color: $pink
+        color: $pink,
     ),
     "gemWithoutLabel": (
-        color: $overlay1
+        color: $overlay1,
     ),
     "memberBadgeIcon": (
-        color: $pink
+        color: $pink,
     ),
     "stickerIcon": (
-        color: $mauve
+        color: $mauve,
     ),
     "audioQualityIcon": (
-        color: $sapphire
+        color: $sapphire,
     ),
     "uploadSizeIcon": (
-        color: $pink
+        color: $pink,
     ),
     "threadIcon": (
-        color: $teal
+        color: $teal,
     ),
     "premiumIcon": (
-        color: $pink
+        color: $pink,
     ),
     "gameIcon": (
-        color: $text
+        color: $text,
     ),
     "circleIcon": (
-        color: $green
-    )
+        color: $green,
+    ),
 );
 
 @each $class, $color in $svgColor {

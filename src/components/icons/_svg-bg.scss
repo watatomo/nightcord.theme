@@ -1,7 +1,7 @@
 $svgBg: (
     "noItemsIcon": (
-        color: $surface1
-    )
+        color: $surface1,
+    ),
 );
 
 @each $class, $color in $svgBg {

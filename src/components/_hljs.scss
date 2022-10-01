@@ -7,7 +7,7 @@
 .hljs-selector-pseudo,
 .hljs-subst,
 .hljs-symbol {
-  color: #{$peach};
+    color: #{$peach};
 }
 
 .hljs-attr,
@@ -17,12 +17,12 @@
 .hljs-template-variable,
 .hljs-type,
 .hljs-variable {
-  color: #{$yellow};
+    color: #{$yellow};
 }
 
 .hljs-built_in,
 .hljs-deletion {
-  color: #{$maroon};
+    color: #{$maroon};
 }
 
 .hljs-doctag,
@@ -32,13 +32,13 @@
 .hljs-number,
 .hljs-regexp,
 .hljs-string {
-  color: #{$teal};
+    color: #{$teal};
 }
 
 .hljs-addition,
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #{$green};
+    color: #{$green};
 }
 
 .hljs-name,
@@ -46,5 +46,5 @@
 .hljs-selector-class,
 .hljs-selector-id,
 .hljs-title {
-  color: #{$blue};
+    color: #{$blue};
 }

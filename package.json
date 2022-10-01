@@ -4,7 +4,8 @@
     "description": "A Discord theme made to resemble Nightcord's UI from Project Sekai.",
     "scripts": {
         "build": "mkdir -p dist/dist; sass --no-charset --no-source-map src:dist/dist",
-        "watch": "mkdir -p dist/dist; sass --no-charset --no-source-map src:dist/dist -w"
+        "watch": "mkdir -p dist/dist; sass --no-charset --no-source-map src:dist/dist -w",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -15,5 +16,11 @@
     "bugs": {
         "url": "https://github.com/mfycode/nightcord.theme/issues"
     },
-    "homepage": "https://github.com/mfycode/nightcord.theme#readme"
+    "homepage": "https://github.com/mfycode/nightcord.theme#readme",
+    "devDependencies": {
+        "husky": "^8.0.0",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.7.1",
+        "sass": "^1.55.0"
+    }
 }
