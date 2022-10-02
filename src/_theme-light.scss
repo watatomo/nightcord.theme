@@ -1,0 +1,27 @@
+@use "sass:math";
+@use "sass:color";
+
+@import "_colors/light";
+
+@import "components/variables";
+
+@import "components/icons-bgImg";
+@import "components/icons-svgColor";
+@import "components/icons-svgBg";
+
+@import "components/titlebar";
+
+@import "components/buttons";
+
+@import "components/pages";
+
+@import "components/navbar";
+@import "components/sidebar-channel";
+
+@import "components/chat";
+
+@import "components/popouts";
+
+@import "components/hljs";
+
+@import "components/details";

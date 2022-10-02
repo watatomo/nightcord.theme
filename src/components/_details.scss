@@ -2,22 +2,22 @@
 rect[fill^="hsl(139"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^="dotOnline"] {
-    fill: $cyan !important;
-    background-color: $cyan !important;
+    fill: $online !important;
+    background-color: $online !important;
 }
 
 // idle
 rect[fill^="hsl(38"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
-    fill: $yellow !important;
-    background-color: $yellow !important;
+    fill: $idle !important;
+    background-color: $idle !important;
 }
 
 // dnd
 rect[fill^="hsl(359"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
-    fill: $red !important;
-    background-color: $red !important;
+    fill: $dnd !important;
+    background-color: $dnd !important;
 }
 
 // offline

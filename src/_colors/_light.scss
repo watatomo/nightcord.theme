@@ -1,0 +1,45 @@
+// colors from catppuccin latte
+// appears to be more vibrant?
+
+$theme: "light";
+
+$rosewater: #dc8a78;
+$flamingo: #dd7878;
+$pink: #ea76cb;
+$mauve: #8839ef;
+$red: #d20f39;
+$maroon: #e64553;
+$peach: #fe640b;
+$yellow: #df8e1d;
+$green: #40a02b;
+$teal: #179299;
+$sky: #04a5e5;
+$sapphire: #209fb5;
+$blue: #1e66f5;
+$lavender: #7287fd;
+
+$close: #ff52a8; // from close button
+$min: #ffde55; // from min button
+$max: #42dcff; // from max button
+
+// the indicators are too unique so they get their own category
+$online: #95fff2;
+$idle: #fff394;
+$dnd: #f394ff;
+
+// basically backwards dark. subject to change
+$text: #312d4a;
+$subtext1: #3d365a;
+$subtext0: #4e4869;
+
+$overlay2: #5c5776;
+$overlay1: #6a6682;
+$overlay0: #78748d;
+
+$surface2: #8e8aa2;
+$surface1: #a49fb6;
+$surface0: #bab6c8;
+
+$base: #c0bfcb;
+$mantle: #f4f2f3;
+$crust: #ffffff;
