@@ -63,13 +63,14 @@ div[class^="perksModal"] {
         color: $pink;
     }
 
-    div[class^="barForeground"],
-    div[class^="tierMarkerAccomplished"] {
-        background-color: $pink;
+    div[class^="barBackground"],
+    div[class^="tierMarkerInProgress"],
+    div[class^="tierBody"] {
+        background-color: $crust !important;
     }
 
-    svg[class^="currentTierIcon"] {
-        color: $base;
+    div[class^="tierMarkerAccomplished"] {
+        background: $pink !important;
     }
 
     div[class*="tierMarkerLabelText"],

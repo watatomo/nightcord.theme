@@ -1,7 +1,8 @@
 // online
 rect[fill^="hsl(139"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
-div[class^="dotOnline"] {
+div[class^="dotOnline"],
+i[class^="statusOnline-"] {
     fill: $online !important;
     background-color: $online !important;
 }
@@ -23,9 +24,10 @@ foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
 // offline
 rect[fill^="hsl(214"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
-div[class^="dotOffline"] {
-    fill: $subtext0 !important;
-    background-color: $subtext0 !important;
+div[class^="dotOffline"],
+i[class^="statusOffline-"] {
+    fill: $subtext1 !important;
+    background-color: $subtext1 !important;
 }
 
 // dots in typing
@@ -40,8 +42,8 @@ svg[class^="cursorDefault-"] svg[class^="dots-"] circle {
 }
 
 // for those roles that blend in the background
-span[class^="username-"][style*="color: rgb(54, 57, 62)"],
-span[class^="username-"][style*="color: rgb(53, 57, 64)"] {
+span[class*="username-"][style*="color: rgb(54, 57, 62)"],
+span[class*="username-"][style*="color: rgb(53, 57, 64)"] {
     color: var(--background-primary) !important;
 }
 

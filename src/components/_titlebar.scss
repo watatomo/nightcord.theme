@@ -30,28 +30,28 @@ div[class*="titleBar-"] {
         }
 
         div[class^="winButtonClose-"] {
-            background-color: $pink;
+            background-color: $close;
             margin-right: 8px;
 
             &:hover {
-                background-color: color.scale($pink, $lightness: -15%);
+                background-color: color.scale($close, $lightness: -15%);
             }
         }
 
         div[class^="winButtonMinMax-"] {
             &:nth-child(3) {
-                background-color: $yellow;
+                background-color: $min;
 
                 &:hover {
-                    background-color: color.scale($yellow, $lightness: -40%);
+                    background-color: color.scale($min, $lightness: -40%);
                 }
             }
 
             &:nth-child(4) {
-                background-color: $sky;
+                background-color: $max;
 
                 &:hover {
-                    background-color: color.scale($sky, $lightness: -40%);
+                    background-color: color.scale($max, $lightness: -40%);
                 }
             }
         }
@@ -64,7 +64,7 @@ div[class*="titleBar-"] {
         }
 
         &::before {
-            content: "Nightcord ";
+            content: "Nightcord";
             font-weight: 800;
             font-size: 0.85em;
             position: absolute;

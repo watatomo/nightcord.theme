@@ -50,8 +50,14 @@ $svgColor: (
     "gameIcon": (
         color: $text,
     ),
-    "circleIcon": (
-        color: $green,
+    "tierMarkerLabelPlusIcon": (
+        color: $pink,
+    ),
+    "currentTierIcon": (
+        color: $pink,
+    ),
+    "tier3Icon": (
+        color: $pink,
     ),
 );
 
@@ -59,7 +65,7 @@ $svgColor: (
     .theme-dark,
     .theme-light {
         svg[class*="#{$class}-"] {
-            color: #{map-get($color, color)};
+            color: #{map-get($color, color)} !important;
         }
     }
 }
