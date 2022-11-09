@@ -1,0 +1,48 @@
+// arrow when someone joins
+div[style*="d1382af8d9e755bc44811b1fd92990a8.svg"] {
+    color: var(--nc-green);
+    background-image: url("data:image/svg+xml,%3Csvg height='18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m18 0h-18v18h18z'/%3E%3Cpath d='m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2' fill='%23currentColor'/%3E%3C/g%3E%3C/svg%3E") !important;
+    filter: none !important;
+}
+
+// server boost icon... again
+main[class^="chatContent"] div[id^="message-content-"] svg[class^="icon-"] {
+    > path[d="M4 0L0 4V8L4 12L8 8V4L4 0ZM7 7.59L4 10.59L1 7.59V4.41L4 1.41L7 4.41V7.59Z"],
+    > path[d="M2 4.83V7.17L4 9.17L6 7.17V4.83L4 2.83L2 4.83Z"] {
+        color: var(--nc-pink);
+    }
+}
+
+// spoiler messages
+.theme-dark,
+.theme-light {
+    span[class^="spoilerText"] {
+        background-color: $surface0;
+
+        &[class*="hidden"] {
+            background-color: $surface2;
+
+            &:hover {
+                background-color: lighten($surface2, 5%);
+            }
+        }
+    }
+
+    div[class^="spoilerContainer-"] {
+        div[class^="spoilerWarning-"] {
+            color: $text;
+            background-color: adjust-color($crust, $alpha: -0.3);
+        }
+
+        &:hover {
+            div[class^="spoilerWarning-"] {
+                color: $text;
+                background-color: $crust;
+            }
+        }
+
+        article[class*="embedFull-"] {
+            border-color: $surface2;
+        }
+    }
+}

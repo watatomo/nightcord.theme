@@ -1,60 +1,41 @@
 @use "sass:math";
 
-$brand: #884499;
+@mixin theme {
+    --nc-flamingo: #{$flamingo};
+    --nc-pink: #{$pink};
+    --nc-mauve: #{$mauve};
+    --nc-red: #{$red};
+    --nc-peach: #{$peach};
+    --nc-yellow: #{$yellow};
+    --nc-green: #{$green};
+    --nc-teal: #{$teal};
+    --nc-sky: #{$sky};
+    --nc-sapphire: #{$sapphire};
+    --nc-blue: #{$blue};
 
-// brand colors
-[data-popout-root],
-html {
-    // weighted brand colors
-    --brand-experiment: #{$brand};
-    --brand-experiment-100: #{lighten($brand, math.div(90%, 2))};
-    --brand-experiment-130: #{lighten($brand, math.div(85%, 2))};
-    --brand-experiment-160: #{lighten($brand, math.div(80%, 2))};
-    --brand-experiment-200: #{lighten($brand, math.div(75%, 2))};
-    --brand-experiment-230: #{lighten($brand, math.div(70%, 2))};
-    --brand-experiment-260: #{lighten($brand, math.div(65%, 2))};
-    --brand-experiment-300: #{lighten($brand, math.div(60%, 2))};
-    --brand-experiment-330: #{lighten($brand, math.div(50%, 2))};
-    --brand-experiment-360: #{lighten($brand, math.div(40%, 2))};
-    --brand-experiment-400: #{lighten($brand, math.div(30%, 2))};
-    --brand-experiment-430: #{lighten($brand, math.div(20%, 2))};
-    --brand-experiment-460: #{lighten($brand, math.div(10%, 2))};
-    --brand-experiment-500: #{$brand};
-    --brand-experiment-530: #{darken($brand, math.div(10%, 2))};
-    --brand-experiment-560: #{darken($brand, math.div(20%, 2))};
-    --brand-experiment-600: #{darken($brand, math.div(30%, 2))};
-    --brand-experiment-630: #{darken($brand, math.div(40%, 2))};
-    --brand-experiment-660: #{darken($brand, math.div(50%, 2))};
-    --brand-experiment-700: #{darken($brand, math.div(60%, 2))};
-    --brand-experiment-730: #{darken($brand, math.div(65%, 2))};
-    --brand-experiment-760: #{darken($brand, math.div(70%, 2))};
-    --brand-experiment-800: #{darken($brand, math.div(75%, 2))};
-    --brand-experiment-830: #{darken($brand, math.div(80%, 2))};
-    --brand-experiment-860: #{darken($brand, math.div(85%, 2))};
-    --brand-experiment-900: #{darken($brand, math.div(90%, 2))};
-    // similar to other brand colors, except alpha only
-    --brand-experiment-05a: #{adjust-color($brand, $alpha: -0.95)};
-    --brand-experiment-10a: #{adjust-color($brand, $alpha: -0.9)};
-    --brand-experiment-15a: #{adjust-color($brand, $alpha: -0.85)};
-    --brand-experiment-20a: #{adjust-color($brand, $alpha: -0.8)};
-    --brand-experiment-25a: #{adjust-color($brand, $alpha: -0.75)};
-    --brand-experiment-30a: #{adjust-color($brand, $alpha: -0.7)};
-    --brand-experiment-35a: #{adjust-color($brand, $alpha: -0.65)};
-    --brand-experiment-40a: #{adjust-color($brand, $alpha: -0.6)};
-    --brand-experiment-45a: #{adjust-color($brand, $alpha: -0.55)};
-    --brand-experiment-50a: #{adjust-color($brand, $alpha: -0.5)};
-    --brand-experiment-55a: #{adjust-color($brand, $alpha: -0.45)};
-    --brand-experiment-60a: #{adjust-color($brand, $alpha: -0.4)};
-    --brand-experiment-65a: #{adjust-color($brand, $alpha: -0.35)};
-    --brand-experiment-70a: #{adjust-color($brand, $alpha: -0.3)};
-    --brand-experiment-75a: #{adjust-color($brand, $alpha: -0.25)};
-    --brand-experiment-80a: #{adjust-color($brand, $alpha: -0.2)};
-    --brand-experiment-85a: #{adjust-color($brand, $alpha: -0.15)};
-    --brand-experiment-90a: #{adjust-color($brand, $alpha: -0.1)};
-    --brand-experiment-95a: #{adjust-color($brand, $alpha: -0.05)};
-}
+    --nc-text: #{$text};
+    --nc-subtext1: #{$subtext1};
+    --nc-subtext0: #{$subtext0};
+    --nc-overlay2: #{$overlay2};
+    --nc-overlay1: #{$overlay1};
+    --nc-overlay0: #{$overlay0};
+    --nc-surface2: #{$surface2};
+    --nc-surface1: #{$surface1};
+    --nc-surface0: #{$surface0};
+    --nc-base: #{$base};
+    --nc-mantle: #{$mantle};
+    --nc-crust: #{$crust};
 
-.theme-dark {
+    --nc-online: #{$online};
+    --nc-idle: #{$idle};
+    --nc-dnd: #{$dnd};
+    --nc-close: #{$close};
+    --nc-close-hover: #{adjust-color($close, $lightness: -15%)};
+    --nc-max: #{$max};
+    --nc-max-hover: #{adjust-color($close, $lightness: -15%)};
+    --nc-min: #{$min};
+    --nc-min-hover: #{adjust-color($close, $lightness: -15%)};
+
     --header-primary: #{$text};
     --header-secondary: #{$subtext0};
 
@@ -65,14 +46,14 @@ html {
     --text-positive: #{$green};
     --text-warning: #{$yellow};
     --text-danger: #{$red};
-    --text-brand: #{$brand};
+    --text-brand: var(--brand-experiment);
 
     --background-primary: #{$base};
     --background-secondary: #{$mantle};
     --background-secondary-alt: #{darken($mantle, 3%)};
     --background-tertiary: #{$crust};
-    --background-accent: #{$brand};
-    --background-floating: #{darken($crust, 3%)};
+    --background-accent: var(--brand-experiment);
+    --background-floating: #{darken($crust, 2%)};
     --background-nested-floating: #{$mantle};
     --background-mobile-primary: #{$base};
     --background-mobile-secondary: #{$mantle};
@@ -157,7 +138,7 @@ html {
     --button-outline-positive-border-active: #{darken($green, math.div(5%, 2))};
 
     --button-outline-brand-text: #{$text};
-    --button-outline-brand-border: #{$brand};
+    --button-outline-brand-border: var(--brand-experiment);
     --button-outline-brand-background: transparent;
     --button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
     --button-outline-brand-text-hover: #{$text};
@@ -190,7 +171,7 @@ html {
     --scrollbar-auto-thumb: #{$crust};
     --scrollbar-auto-track: #{adjust-color($mantle, $alpha: -0.35)};
 
-    --scrollbar-auto-scrollbar-color-thumb: #{$brand};
+    --scrollbar-auto-scrollbar-color-thumb: var(--brand-experiment);
     --scrollbar-auto-scrollbar-color-track: #{adjust-color(
             $mantle,
             $alpha: -0.35
@@ -201,8 +182,8 @@ html {
 
     --logo-primary: #{$text};
 
-    --control-brand-foreground: #{$brand};
-    --control-brand-foreground-new: #{$brand};
+    --control-brand-foreground: var(--brand-experiment);
+    --control-brand-foreground-new: var(--brand-experiment);
 
     --background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
     --background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
@@ -219,7 +200,7 @@ html {
 
     --activity-card-background: #{$crust};
 
-    --textbox-markdown-syntax: #{$surface0};
+    --textbox-markdown-syntax: #{$overlay0};
 
     --spoiler-revealed-background: #{$surface0};
     --spoiler-hidden-background: #{$surface2};
@@ -245,7 +226,7 @@ html {
     --deprecated-text-input-border-disabled: #{$mantle};
     --deprecated-text-input-prefix: #{$subtext0};
 
-    --focus-primary: #{$brand};
+    --focus-primary: var(--brand-experiment);
 
     --interactive-normal: #{$text};
     --interactive-muted: #{adjust-color($text, $alpha: -0.7)};
@@ -253,12 +234,12 @@ html {
     --interactive-active: #{$text};
 }
 
-// @if $theme == dark {
-//     :root .theme-dark {
-//         @include themes;
-//     }
-// } @else if $theme == light {
-//     :root .theme-light {
-//         @include themes;
-//     }
-// }
+@if $theme == light {
+    .theme-light {
+        @include theme;
+    }
+} @else if $theme == dark {
+    .theme-dark {
+        @include theme;
+    }
+}

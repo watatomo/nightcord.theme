@@ -1,12 +1,13 @@
 /**
 * @name Nightcord
 * @author mfycode, Ren (@riamuyumemi)
-* @version 1.1.0
+* @version 0.0.1
 * @description A theme made to look like the Nightcord UI from Project Sekai (プロセカ)!
 * @website https://github.com/mfycode/nightcord.theme
 */
 
 /*Credits to @KageMiyaku and @Pudding77984612 for the original theme. Thank you!*/
 
-@import "_theme-dark";
-// @use "_theme-light";
+@import "_colors/_index";
+@import "components/app/_index";
+@import "components/chat/_index";

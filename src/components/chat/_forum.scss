@@ -1,0 +1,17 @@
+div[class^="chat-"] > div[class^="content-"] {
+    > div:first-child {
+        background-color: var(--background-primary);
+
+        div[class*="mainCard-"] {
+            background-color: var(--nc-surface0);
+        }
+    }
+}
+
+// // fix the sidebar on smaller servers
+// div[class^="chat-"]
+//     > div[class^="content-"]
+//     > main[class^="chatContent-"]
+//     + div[class^="container-"] {
+//     background-color: var(--background-secondary);
+// }

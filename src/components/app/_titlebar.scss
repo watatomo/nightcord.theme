@@ -1,27 +1,16 @@
-// i hate the use of colors here but what can you do
-// div[class^="appMount-"]#app-mount,
-// body,
-// div[class^="app-"] > div[class^="app-"] > div[class^="bg-"] {
-//     background-color: var(--background-secondary);
-// }
-
-// titlebar
 div[class*="titleBar-"] {
-    // background-color: var(--background-secondary);
-
     // windows exclusive
     &[class*="typeWindows-"] {
         &[class*="withFrame-"] {
-            height: 28px;
-            margin: 0;
+            height: 24px;
+            padding: 0 4px;
         }
 
         div[class*="winButton-"] {
-            margin: 11px 0 0 9px;
+            margin: 7px 0 0 12px;
             height: 14px;
             width: 14px;
             border-radius: 50%;
-            transition: background-color 0.2s ease;
 
             svg * {
                 fill: transparent;
@@ -30,28 +19,28 @@ div[class*="titleBar-"] {
         }
 
         div[class^="winButtonClose-"] {
-            background-color: $close;
+            background-color: var(--nc-close);
             margin-right: 8px;
 
             &:hover {
-                background-color: color.scale($close, $lightness: -15%);
+                background-color: var(--nc-close-hover);
             }
         }
 
         div[class^="winButtonMinMax-"] {
             &:nth-child(3) {
-                background-color: $min;
+                background-color: var(--nc-min);
 
                 &:hover {
-                    background-color: color.scale($min, $lightness: -40%);
+                    background-color: var(--nc-min-hover);
                 }
             }
 
             &:nth-child(4) {
-                background-color: $max;
+                background-color: var(--nc-max);
 
                 &:hover {
-                    background-color: color.scale($max, $lightness: -40%);
+                    background-color: var(--nc-max-hover);
                 }
             }
         }
@@ -70,12 +59,8 @@ div[class*="titleBar-"] {
             position: absolute;
             top: 8px;
             left: 10px;
-            color: $subtext0;
+            color: var(--text-muted);
             width: auto;
         }
     }
 }
-
-// [tabindex="0"] + div[class*="titleBar-"] {
-//     background-color: revert
-// }

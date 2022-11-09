@@ -1,0 +1,62 @@
+main[class^="chatContent-"] {
+    form[class^="form-"] {
+        // add border around text area
+        div[class^="channelTextArea-"] {
+            border: solid 1px var(--nc-surface1);
+
+            div[class^="attachedBars-"] {
+                border-top: solid 1px var(--nc-surface1);
+
+                div[class^="replyBar-"],
+                div[class^="threadSuggestionBar-"] {
+                    background: var(--background-floating);
+                }
+            }
+
+            svg[class*="stickerIcon-"] {
+                color: var(--interactive-normal) !important;
+            }
+        }
+
+        [class*="inlineCode-"],
+        code.inline {
+            background: var(--nc-surface0);
+        }
+    }
+
+    div[class^="container-"] div[class^="cardWrapper-"] {
+        div[class*="completed-"] {
+            svg[class^="checkmark-"] {
+                background-color: var(--nc-crust);
+                color: var(--nc-crust);
+            }
+        }
+    }
+}
+
+// emoji button
+div[class^="channelTextArea-"] button[class*="emojiButton-"] {
+    background: transparent !important;
+}
+
+// autocomplete chat textboxes
+div[class*="autocomplete-"] {
+    background-color: var(--nc-crust) !important;
+
+    div[class*="categoryHeader"] {
+        background-color: var(--nc-mantle) !important;
+    }
+    div[class*="autocompleteRowSubheading"] {
+        background-color: transparent;
+    }
+    div[class*="autocompleteRowContentSecondary"] {
+        background-color: transparent;
+    }
+    div[class^="usageWrapper-"] > div[class*="title-"] {
+        color: var(--brand-experiment) !important;
+    }
+
+    strong {
+        color: var(--brand-experiment) !important;
+    }
+}
